@@ -22,6 +22,7 @@ public class AntiExplode extends JavaPlugin implements Listener {
         }
 
         height = getConfig().getInt("height");
+        getServer().getPluginManager().registerEvents(this, this);
     }
 
     @Override
